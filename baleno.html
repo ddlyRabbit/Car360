@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>Reel implementation</title>
+    <script src='http://code.jquery.com/jquery-1.9.1.min.js' type='text/javascript'></script>
+    <script src="http://code.vostrel.cz/jquery.reel.js" type='text/javascript'></script>
+</head>
+<body>
+
+<img id="image" src="crop.jpg" width="1280" height="720" />
+    <script>
+      $('#image').reel({
+        image:       'stitched_image.jpg',
+        frames:       36,
+        revolution:       800,
+        footage:        36,
+        cw:     true,
+
+	annotations: {
+          "waterfront": {
+            image: {
+                src:  "download.gif",
+		width: 40,
+		height: 40
+            },
+            link: {
+                href: "crop.jpg"
+            },
+	    start: 4,
+	    end: 14,
+            x: [873,837,789,732,668,600,533,469,412,364,328],
+            y: [223,227,231,233,235,236,235,233,231,227,223],
+          }
+        }
+      });
+    </script>
+</body>
+</html>
+
+RmmfVP6eQNFUGyjwtykypA7h 
+hpjGGWyBY3QxxRTCboLgrX9U
+GhKXiXYzwZzma5PneA3MFHGd 
