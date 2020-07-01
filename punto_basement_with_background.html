@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Reel implementation</title>
+    <script src='jquery.min.js' type='text/javascript'></script>
+    <script src="jquery.reel.js" type='text/javascript'></script>
+</head>
+<body>
+
+<img id="image" src="crop.jpg" width="612" height="480" />
+    <script>
+      $('#image').reel({
+        image:       'stitched_image_punto_basement.jpg',
+        frames:       37,
+        revolution:       800,
+        footage:        37,
+        cw:     false,
+      });
+    </script>
+</body>
+</html>
