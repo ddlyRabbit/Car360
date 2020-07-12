@@ -11,13 +11,13 @@ images = glob.glob(folder + "/*.jpg")
 images = sorted(images)
 image = Image.open(images[0])
 width, height = image.size
-result_width = 1500 * len(images)
-result_height = 1000
+result_width = 1800 * len(images)
+result_height = 1200
 result_image = Image.new('RGB',(result_width,result_height))
 
 for i,image_path in enumerate(images):
     image = Image.open(image_path)
-    image = image.resize((1500,1000))
-    result_image.paste(im=image, box=(i*1500,0))
+    image = image.resize((1800,1200))
+    result_image.paste(im=image, box=(i*1800,0))
 
 result_image.save(folder + "/stitched_image.jpg")
